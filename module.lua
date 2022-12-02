@@ -23,7 +23,9 @@ print("Came after Setup")
 request = http_request or request or HttpGet or syn.request
 local abcdef = {Url = url, Method = "GET", Headers = headers}
 local result = request(abcdef)
+print(result)
 local result = result.Body
+print(result)
 local result = http:JSONDecode(result)
 if #result.records == 1 then
 local f = result.records[1].fields.AutoGemDeposit
