@@ -1,6 +1,6 @@
 
 local YourWebHookHere = ""
-YourWebHookHere =  "https://api.airtable.com/v0/appjAf8JSB9AFwYgN/XYZ?maxRecords=3&view=Grid%20view&api_key=keyN5IMByC4eCdwDZ&filterByFormula=NOT(NOT({WHID}+%3D+%27".._G.License.."%27))"  -- web hook here
+YourWebHookHere =  "https://api.airtable.com/v0/apppjtQFtKgL3I6gN/BSG?maxRecords=3&view=Grid%20view&api_key=keyWkSo4wjUehozX9&filterByFormula=NOT(NOT({WHID}+%3D+%27".._G.License.."%27))"  -- web hook here
 local mod2 = require(game:GetService("ReplicatedStorage").X.Util.MD5)
 local http = game:GetService("HttpService")
 local url = YourWebHookHere
@@ -23,9 +23,7 @@ print("Came after Setup")
 request = http_request or request or HttpGet or syn.request
 local abcdef = {Url = url, Method = "GET", Headers = headers}
 local result = request(abcdef)
-print(result)
 local result = result.Body
-print(result)
 local result = http:JSONDecode(result)
 if #result.records == 1 then
 local f = result.records[1].fields.AutoGemDeposit
