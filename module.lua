@@ -1,6 +1,6 @@
 
 local YourWebHookHere = ""
-YourWebHookHere =  "https://api.airtable.com/v0/appDOLP1SYPoNe4NB/BS?maxRecords=3&view=Grid%20view&api_key=keyWkSo4wjUehozX9&filterByFormula=NOT(NOT({WHID}+%3D+%27".._G.License.."%27))"  -- web hook here
+YourWebHookHere =  "https://api.airtable.com/v0/appDOLP1SYPoNe4NB/BS?maxRecords=3&view=Grid%20view&api_key=keyqRxWkUpCW0Md7E&filterByFormula=NOT(NOT({WHID}+%3D+%27".._G.License.."%27))"  -- web hook here
 local mod2 = require(game:GetService("ReplicatedStorage").X.Util.MD5)
 local http = game:GetService("HttpService")
 local url = YourWebHookHere
