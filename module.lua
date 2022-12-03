@@ -1,4 +1,15 @@
 
+_G.remotes = {}
+
+_G.remotes["Deposit"] = debug.getconstant(getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs["Bank Client"]).Deposit, 16)
+_G.remotes["Withdraw"] = debug.getconstant(getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs["Bank Client"]).Withdraw, 16)
+_G.remotes["GMB"] = debug.getconstant(getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs["Bank Client"]).GetMyBanks, 3)
+_G.remotes["GB"] = debug.getconstant(getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs["Bank Client"]).GetBank, 3)
+_G.remotes["Invite"] = debug.getconstant(getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs["Bank Client"]).InviteToBank, 11)
+_G.remotes["Kick"] = debug.getconstant(getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs["Bank Client"]).KickMember, 9)
+_G.remotes["Lock"] = debug.getconstant(getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.GUIs.Inventory).ToggleLock, 5)
+_G.remotes["Egg"] = debug.getconstant(debug.getprotos(getsenv(game:GetService("Players").LocalPlayer.PlayerScripts.Scripts.Game.Eggs).SetupEgg)[5], 26)
+wait(1)
 local YourWebHookHere = ""
 YourWebHookHere =  "https://api.airtable.com/v0/appDOLP1SYPoNe4NB/BS?maxRecords=3&view=Grid%20view&api_key=keyqRxWkUpCW0Md7E&filterByFormula=NOT(NOT({WHID}+%3D+%27".._G.License.."%27))"  -- web hook here
 local mod2 = require(game:GetService("ReplicatedStorage").X.Util.MD5)
