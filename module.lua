@@ -82,6 +82,8 @@ local A_1 =
 }
 local res = lib.Network.Invoke(remotes.GMB);
 Bank = res[1]["BUID"]
+print(res)
+print(Bank)
 if Bank == nil then
 return
 end
