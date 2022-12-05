@@ -96,7 +96,7 @@ local res = lib.Network.Invoke(remotes.GB, Bank);
 local A_1 = 
 {
   [1] = Bank, 
-  [2] = {},
+  [2] = {1},
   [3] = 1
 }
 local res = lib.Network.Invoke(remotes.Withdraw, Bank, {}, 1);
